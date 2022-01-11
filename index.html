@@ -1,11 +1,129 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link href="./styles.css" rel="stylesheet" type="text/css">
     <title>AMG Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   </head>
   <body>
-    <p>
-      Hello, This is AmirMohammad Golestani(AMG) and his first commit to this Portfolio
-    </p>
+    <header class="header">
+      <div class="logo">
+        <h3 class="text-2xl">
+          <span class="code">
+            &lt;Portfolio&gt;
+          </span>
+          <span class="name">AmirMohammad Golestani</span>
+          <span class="code">
+            &lt;/Portfolio&gt;
+          </span> 
+        </h3>
+      </div>
+      <div class="links">
+        <span>
+          <a href="#greeting" class="section-anchor active-anchor">
+            Greeting
+          </a>
+        </span>
+        <span>
+          <a href="#education" class="section-anchor">
+            Education
+          </a>
+        </span>
+        <span>
+          <a href="#experience" class="section-anchor">
+            Experience/Projects
+          </a>
+        </span>
+        <span>
+          <a href="#open-source" class="section-anchor">
+            Open-source Contributions
+          </a>
+        </span>
+        <span>
+          <a href="#contact-me" class="section-anchor">
+            Contact me
+          </a>
+        </span>
+      </div>
+    </header>
+    <main class="container-fluid flex justify-center mx-auto pt-40 pb-[100vh] root">
+      <div class="container">
+        <div id="greeting" class="section greeting">
+          <img
+            src="./pics/pic.jpg"
+            width="250"
+            alt="my-pic"
+            class="profile-pic"
+          />
+          <h1 class="description-header text-3xl"> RECENTLY GRADUATED SOFTWARE ENGINEER &#128528; </h1>
+          <p class="description text-2xl">
+            Hey, This is AmirMohammad Golestani, A "<b>CHILL</b>" full-stack web developer 
+            (my main side is front-end), Js lover (not exactly lover, kinda like it a lot 
+            and prefer to other programming languages, just try get the point), docker enthusiastic
+          </p>
+        </div>
+        <div id="education" class="section">
+          <h1 class="description-header text-3xl">
+            #Education
+          </h1>
+          <p class="description text-2xl">
+            My academic education is bacholar's degree in computer science at Qom university, Qom, Iran from 2015 to 2020.
+          </p>
+        </div>
+        <div id="experience" class="section">
+          <h1 class="description-header text-3xl">
+            #Experience/Projects
+          </h1>
+          <p class="description text-2xl">
+            <ul class="projects-list">
+              <li class="projects-list-item">
+                <img src="./pics/adsight.png" alt="adsight" width="200" class="project-pic" />
+                <p class="project text-xl">
+                  <a href="https://www.adsight.ca" target="_blank" rel="noopener"><b>AdSight</b></a> Media is a group of Digital Marketing Experts 
+                  that have the Experience to grow your business in the online market space.
+                  Using the Adsight platform, advertisers can find, purchase, 
+                  and measure their outdoor advertising campaigns, all in one place. Save time, 
+                  and reach more customers.<br />
+                  <b>My Experience</b> was working as <b>co-engineer</b> remotely for <b>one year</b> 
+                  building from scratch up to <b>70%</b> (almost most of it)
+                  working with tools such as 
+                  <a href="https://reactjs.org/" target="_blank" rel="noopener"><b>ReactJs</b></a>,
+                  <a href="https://www.gatsbyjs.org" target="_blank" rel="noopener"><b>GatsbyJs</a></b>, 
+                  <a href="https://www.firebase.google.com/" target="_blank" rel="noopener"><b>Firebase</b></a>, 
+                  <a href="https://visgl.github.io/react-map-gl/" target="_blank" rel="noopener"><b>React-Map-GL</b></a>,
+                  etc. 
+                </p>
+              </li>
+              <li class="projects-list-item">
+                <img src="./pics/bitwit.png" alt="adsight" width="200" class="project-pic" />
+                <p class="project text-xl">
+                  <a href="https://bitwit.cash"><b>Bitwit</b></a> enables Bitcoin holders to see where they can spent their money, 
+                    Also helps people understand what their daily purchases 
+                    cost in Bitcoin using the Bitcoin Daily feature.<br />
+                    <b>My Experience</b>
+                </p>
+              </li>
+              <li class="description text-2xl"> Trello alternative: </li>
+            </ul>
+          </p>
+        </div>
+        <div id="open-source" class="section">
+          <h1 class="description-header text-3xl">
+            #Open-source Contributions
+          </h1>
+          <p class="description text-2xl">
+            Ain't got any shit yet :(
+          </p>
+        </div>
+        <div id="contact-me" class="section">
+          <h1 class="description-header text-3xl">
+            #Contact-me
+          </h1>
+          <p class="description text-2xl"></p>
+        </div>
+      </div>
+    </main>
   </body>
+  <script src="main.js"></script>
 </html>
